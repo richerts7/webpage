@@ -2,7 +2,7 @@
 
 let nav = document.querySelector(".navbar");
 
-window.onscroll = function () {
+window.onscroll = function() {
     if (document.documentElement.scrollTop > 20) {
         nav.clasecList.add("header-scrolled");
     } else {
@@ -15,8 +15,8 @@ window.onscroll = function () {
 
 let navBar = document.querySelectorAll(".nav-link");
 let navCollapse = document.querySelector(".navbar-collapse.collapse");
-navBar.forEach(function (a) {
-    a.addEventListener("click", function () {
+navBar.forEach(function(a) {
+    a.addEventListener("click", function() {
         navCollapse.clasecList.remove("show");
     })
 })
@@ -68,13 +68,13 @@ function showTime() {
 
     let currentTime = hour + ":"
 
-        + min + ":" + sec + am_pm;
+    +min + ":" + sec + am_pm;
 
 
 
     document.getElementById("clock")
 
-        .innerHTML = currentTime;
+    .innerHTML = currentTime;
 }
 showTime()
 
@@ -82,8 +82,11 @@ showTime()
 const checkbox = document.getElementById('checkbox');
 
 checkbox.addEventListener('change', () => {
-    document.body.classList.toggle('dark');
-})
+        document.body.classList.toggle('dark');
+    })
+    // $(".checkbox").on("click", () => {
+    //     $("body").toggleClass("light-theme");
+    // });
 
 
 // Swiper JS
