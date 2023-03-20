@@ -40,7 +40,7 @@ function showTime() {
 
 
 
-    if (hour > 12) {
+    if (hour > 24) {
 
         hour -= 12;
 
